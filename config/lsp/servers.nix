@@ -6,6 +6,7 @@
 		jsonls.enable = true;
 		kotlin_language_server.enable = true;
 		nixd.enable = true;
+		clangd.enable = true;
 		tinymist = {
 			enable = true;
 			extraOptions.offset_encoding = "utf-8";
