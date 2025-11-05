@@ -15,5 +15,6 @@
 				exportPdf = "onSave";
 			};
 		};
+		clangd.enable = true;
 	};
 }
