@@ -1,22 +1,23 @@
  {
 	# Import all your configuration modules here
 	imports = [
-		./options.nix
-		./remap.nix
-		./clipboard.nix
-		./comment.nix
-		./telescope.nix
-		./treesitter.nix
-		./cmp
-		./lsp
+		./autocmd.nix
 		./catppuccin.nix
+		./clipboard.nix
+		./cmp
+		./comment.nix
+		./git
+		./lsp
+		./lualine.nix
+		./movement.nix
+		./options.nix
+		./refactoring.nix
+		./remap.nix
+		./telescope.nix
+		./textYankPost.nix
+		./treesitter.nix
 		./undotree.nix
 		./whitespace.nix
-		./lualine.nix
-		./autocmd.nix
-		./textYankPost.nix
-		./git
-		./refactoring.nix
 	];
 
 	globals.mapleader = " ";

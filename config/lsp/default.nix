@@ -1,6 +1,5 @@
-{pkgs, ...}: let
-	map = mode: key: action: { mode = mode; key = key; action = action; };
-in {
+{pkgs, ...}:
+{
 	imports = [
 		./servers.nix
 	];
