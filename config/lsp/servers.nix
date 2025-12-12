@@ -8,12 +8,8 @@
 		nixd.enable = true;
 		tinymist = {
 			enable = true;
-			extraOptions = {
-				offset_encoding = "utf-8";
-			};
-			settings = {
-				exportPdf = "onSave";
-			};
+			extraOptions.offset_encoding = "utf-8";
+			settings.exportPdf = "never";
 		};
 		clangd.enable = true;
 	};
