@@ -24,11 +24,12 @@
 			auto_install = true;
 			ensure_installed =[
 				"git_config"
-					"git_rebase"
-					"gitattributes"
-					"gitcommit"
-					"gitignore"
+				"git_rebase"
+				"gitattributes"
+				"gitcommit"
+				"gitignore"
 			];
+			install.compilers = [ "zig " ];
 
 			indent_enable = true;
 			highlight.enable = true;
@@ -46,4 +47,8 @@
 			sync_install = false;
 		};
 	};
+
+	extraPackages = [
+		pkgs.zig
+	];
 }
