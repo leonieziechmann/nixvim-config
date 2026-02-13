@@ -7,6 +7,7 @@
 		./cmp
 		./comment.nix
 		./git
+		./leetcode.nix
 		./lsp
 		./lualine.nix
 		./movement.nix
@@ -16,6 +17,7 @@
 		./telescope.nix
 		./textYankPost.nix
 		./treesitter.nix
+		./typst.nix
 		./undotree.nix
 		./whitespace.nix
 	];

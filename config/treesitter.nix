@@ -3,21 +3,38 @@
 		enable = true;
 
 		grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+			lua
 			bash
+			nix
+			python
+
+			javascript
+			typescript
+			php
+			html
+			css
+
 			json
 			xml
 			yaml
 			toml
+
+			cmake
 			make
+
 			markdown
 			regex
-			typst
 
-			nix
+			go
+			java
+			kotlin
+			haskell
+
 			c
 			cpp
-			go
-			lua
+			rust
+
+			typst
 		];
 
 		settings = {
