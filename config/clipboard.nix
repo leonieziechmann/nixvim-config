@@ -1,4 +1,4 @@
 {
-	clipboard.register = "unnamedplus";
-	clipboard.providers.xclip.enable = true;
+  clipboard.register = "unnamedplus";
+  clipboard.providers.xclip.enable = true;
 }

@@ -1,9 +1,9 @@
 {
-	opts = {
-		list = true;
-		listchars = {
-			tab = ''▸ '';
-			trail = ''·'';
-		};
-	};
+  opts = {
+    list = true;
+    listchars = {
+      tab = ''▸ '';
+      trail = ''·'';
+    };
+  };
 }

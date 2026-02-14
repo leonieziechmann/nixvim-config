@@ -1,11 +1,11 @@
 {
-	plugins.comment = {
-		enable = true;
+  plugins.comment = {
+    enable = true;
 
-		settings = {
-			padding = true;
-			toggler.line = "<leader>/";
-			opleader.line = "<leader>/";
-		};
-	};
+    settings = {
+      padding = true;
+      toggler.line = "<leader>/";
+      opleader.line = "<leader>/";
+    };
+  };
 }

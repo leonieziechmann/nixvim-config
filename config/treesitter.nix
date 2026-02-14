@@ -1,71 +1,71 @@
 {pkgs, ...}: {
-	plugins.treesitter = {
-		enable = true;
+  plugins.treesitter = {
+    enable = true;
 
-		grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-			lua
-			bash
-			nix
-			python
+    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+      lua
+      bash
+      nix
+      python
 
-			javascript
-			typescript
-			php
-			html
-			css
+      javascript
+      typescript
+      php
+      html
+      css
 
-			json
-			xml
-			yaml
-			toml
+      json
+      xml
+      yaml
+      toml
 
-			cmake
-			make
+      cmake
+      make
 
-			markdown
-			regex
+      markdown
+      regex
 
-			go
-			java
-			kotlin
-			haskell
+      go
+      java
+      kotlin
+      haskell
 
-			c
-			cpp
-			rust
+      c
+      cpp
+      rust
 
-			typst
-		];
+      typst
+    ];
 
-		settings = {
-			auto_install = true;
-			ensure_installed =[
-				"git_config"
-				"git_rebase"
-				"gitattributes"
-				"gitcommit"
-				"gitignore"
-			];
-			install.compilers = [ "zig " ];
+    settings = {
+      auto_install = true;
+      ensure_installed = [
+        "git_config"
+        "git_rebase"
+        "gitattributes"
+        "gitcommit"
+        "gitignore"
+      ];
+      install.compilers = ["zig "];
 
-			indent_enable = true;
-			highlight.enable = true;
+      indent_enable = true;
+      highlight.enable = true;
 
-			incremental_selection = {
-				enable = true;
-				keymaps = {
-					init_selection = false;
-					node_decremental = "grm";
-					node_incremental = "grn";
-					scope_incremental = "grc";
-				};
-			};
+      incremental_selection = {
+        enable = true;
+        keymaps = {
+          init_selection = false;
+          node_decremental = "grm";
+          node_incremental = "grn";
+          scope_incremental = "grc";
+        };
+      };
 
-			sync_install = false;
-		};
-	};
+      sync_install = false;
+    };
+  };
 
-	extraPackages = [
-		pkgs.zig
-	];
+  extraPackages = [
+    pkgs.zig
+  ];
 }

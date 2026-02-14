@@ -1,19 +1,19 @@
 let
-	map = mode: key: action: { mode = mode; key = key; action = action; };
+  kmap = mode: key: action: {inherit mode key action;};
 in {
-	keymaps = [
-		(map "n" "<C-d>" "<C-d>zz")
-		(map "n" "<C-u>" "<C-u>zz")
+  keymaps = [
+    (kmap "n" "<C-d>" "<C-d>zz")
+    (kmap "n" "<C-u>" "<C-u>zz")
 
-		(map "i" "aeq" "ä")
-		(map "i" "ueq" "ü")
-		(map "i" "oeq" "ö")
-		(map "i" "szz" "ß")
+    (kmap "i" "aeq" "ä")
+    (kmap "i" "ueq" "ü")
+    (kmap "i" "oeq" "ö")
+    (kmap "i" "szz" "ß")
 
-		(map "i" "AEQ" "Ä")
-		(map "i" "UEQ" "Ü")
-		(map "i" "OEQ" "Ö")
+    (kmap "i" "AEQ" "Ä")
+    (kmap "i" "UEQ" "Ü")
+    (kmap "i" "OEQ" "Ö")
 
-		(map "i" "<C-H>" "<C-w>")
-	];
+    (kmap "i" "<C-H>" "<C-w>")
+  ];
 }

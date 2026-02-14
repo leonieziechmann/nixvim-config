@@ -1,18 +1,17 @@
-{ ... }:
 let
-	map = mode: key: action: { mode = mode; key = key; action = action; };
+  kmap = mode: key: action: {inherit mode key action;};
 in {
-	plugins.smear-cursor = {
-		enable = true;
-	};
+  plugins = {
+    smear-cursor.enable = true;
 
-	plugins.flash = {
-		enable = true;
+    flash = {
+      enable = true;
+      settings.search.mode = "fuzzy";
+    };
+  };
 
-		settings.search.mode = "fuzzy";
-	};
-	keymaps = [
-		(map [ "n" "x" "o" ] "<leader>f" ''<cmd>lua require("flash").jump()<cr>'')
-		(map [ "n" ] "<leader>F" ''<cmd>lua require("flash").toggle()<cr>'')
-	];
+  keymaps = [
+    (kmap ["n" "x" "o"] "<leader>f" ''<cmd>lua require("flash").jump()<cr>'')
+    (kmap ["n"] "<leader>F" ''<cmd>lua require("flash").toggle()<cr>'')
+  ];
 }

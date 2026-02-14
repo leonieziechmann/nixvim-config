@@ -1,6 +1,6 @@
 {
-	plugins.refactoring = {
-		enable = true;
-		enableTelescope = true;
-	};
+  plugins.refactoring = {
+    enable = true;
+    enableTelescope = true;
+  };
 }
