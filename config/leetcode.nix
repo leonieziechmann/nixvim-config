@@ -39,8 +39,8 @@
                   path = "%s"
 
                   [dependencies]
-                  rand = "0.8"
-                  regex = "1"
+                  rand = "0.10.0"
+                  regex = "1.12.3"
                   itertools = "0.14.0"
                 ]]
 
@@ -52,10 +52,6 @@
                 else
                   print("Failed to open file: " .. cargo_path)
                 end
-
-                -- like the extraPackages, only keep these two lines if you dont have a system-wide rust-toochain configured
-                vim.env.RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}"
-                vim.cmd("LspRestart rust_analyzer")
               end
             '';
         }

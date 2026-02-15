@@ -25,11 +25,6 @@
 
     # Systems Langs
     clangd.enable = true;
-    rust_analyzer = {
-      enable = true;
-      installCargo = true;
-      installRustc = true;
-    };
 
     # Container
     docker_language_server.enable = true;
