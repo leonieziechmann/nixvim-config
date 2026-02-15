@@ -5,6 +5,7 @@
     ./catppuccin.nix
     ./clipboard.nix
     ./cmp
+    ./column.nix
     ./comment.nix
     ./git
     ./leetcode.nix

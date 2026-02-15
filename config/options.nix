@@ -6,7 +6,7 @@
     tabstop = 2;
     softtabstop = 2;
     shiftwidth = 2;
-    expandtab = false;
+    expandtab = true;
 
     smartindent = true;
 
@@ -23,7 +23,5 @@
     termguicolors = true;
 
     scrolloff = 8;
-
-    colorcolumn = "80";
   };
 }
